@@ -1,0 +1,7 @@
+body {background-color:grey ;}
+table {background-color: rgb(255, 255, 255);}
+a:hover {
+    color: orangered;
+  }
+  tr:nth-child(odd) { background-color:palegreen  }
+ 
