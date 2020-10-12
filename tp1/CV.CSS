@@ -1,5 +1,6 @@
-body {background-color:grey ;}
-table {background-color: rgb(255, 255, 255);}
+body {background-color:pink ;}
+table {background-color: rgb(255, 255, 255);
+  border-collapse:  no collapse }
 a:hover {
     color: orangered;
   }
