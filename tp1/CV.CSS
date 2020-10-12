@@ -28,4 +28,10 @@ tr:hover{background-color : rgb(233, 233, 122)}
 h1{color: tomato; }
 h2{color: rgb(255, 175, 71);}
 
-.grande-image{ width="1000"}
+
+.grande-image:hover{ 
+    transform:scale(2.5,2.5);
+}
+
+
+
