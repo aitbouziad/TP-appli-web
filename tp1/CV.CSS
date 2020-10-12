@@ -1,8 +1,31 @@
-body {background-color:pink ;}
-table {background-color: rgb(255, 255, 255);
-  border-collapse:  no collapse }
+body {background-color:rgb(243, 229, 204);}
+
+table {background-color: rgb(243, 229, 204);
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+          background-color: lightblue;
+      }
+    }
+    th, td {
+
+      padding: 4px 4px 4px 15px;
+  
+      text-align: left;
+  
+    }
+
 a:hover {
-    color: orangered;
+    color: rgb(243, 173, 44);
   }
-  tr:nth-child(odd) { background-color:palegreen  }
- 
+
+
+  tr:nth-child(odd) { background-color:rgb(245, 204, 129); }
+
+tr:hover{background-color : rgb(233, 233, 122)}
+
+h1{color: tomato; }
+h2{color: rgb(255, 175, 71);}
+
+.grande-image{ width="1000"}
