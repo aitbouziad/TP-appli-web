@@ -23,8 +23,9 @@ for(let item of document.querySelectorAll('.inputAW')){
     
 }
   if(document.getElementById("error").innerHTML == ""){
-    var nom = document.getElementById("nom").value
-    document.getElementById("resultat").innerHTML = `Bienvenue à ${nom}`;
+    var prénom = document.getElementById("prénom").value
+    document.getElementById("resultat").innerHTML = `Bienvenue à ${prénom}`;
+    
     document.getElementById("error").classList.remove("display")
   document.getElementById("resultat").classList.add("display")
   }
