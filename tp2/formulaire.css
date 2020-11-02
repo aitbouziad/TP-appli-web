@@ -3,7 +3,7 @@ label{
     display: inline-block;
 }
 
-input type="button" { align:"center"}
+input { align:"center"}
 
 
 #error{
