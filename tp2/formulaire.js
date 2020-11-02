@@ -24,7 +24,7 @@ for(let item of document.querySelectorAll('.inputAW')){
 }
   if(document.getElementById("error").innerHTML == ""){
     var prenom = document.getElementById("prenom").value
-    document.getElementById("resultat").innerHTML = `Bienvenue à ${prénom}`;
+    document.getElementById("resultat").innerHTML = `Bienvenue à ${prenom}`;
 
     document.getElementById("error").classList.remove("display")
   document.getElementById("resultat").classList.add("display")
