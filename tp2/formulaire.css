@@ -1,5 +1,5 @@
 label{
-    width: 100px;
+    width: 200px;
     display: inline-block;
 }
 #error, #resultat {
@@ -9,18 +9,21 @@ label{
 
 .display{
 
-    display: block ! important;
+    display: block! ;
+
 }
 
-div id="error" {
+#error{
     background-color:pink;
     padding: 5px;
     border: 1px;
+    display: none;
 
 }
 
-div id="resultat" {
+#resultat{
     background-color:green;
     padding: 5px;
     color: white;
+    display:none; 
 }
