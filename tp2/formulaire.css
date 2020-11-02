@@ -9,8 +9,8 @@ form{
 display:block;
 margin-top:
 
-
 }
+
 p { padding-left: 200px;}
 
 
@@ -31,6 +31,6 @@ p { padding-left: 200px;}
 
 .display{
 
-    display: block! ;
+    display: block !important;
 
 }
