@@ -1,7 +1,7 @@
 function validation(){
   
   var nom = document.getElementById("nom").value;
-  var prénom = document.getElementById("prénom").value;
+  var prenom = document.getElementById("prenom").value;
   var date = document.getElementById("date").value;
   var adresse = document.getElementById("adresse").value;
   var mail = document.getElementById("mail").value;
@@ -23,9 +23,9 @@ for(let item of document.querySelectorAll('.inputAW')){
     
 }
   if(document.getElementById("error").innerHTML == ""){
-    var prénom = document.getElementById("prénom").value
+    var prenom = document.getElementById("prenom").value
     document.getElementById("resultat").innerHTML = `Bienvenue à ${prénom}`;
-    
+
     document.getElementById("error").classList.remove("display")
   document.getElementById("resultat").classList.add("display")
   }
