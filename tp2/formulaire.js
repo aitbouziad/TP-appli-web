@@ -1,18 +1,30 @@
 function validation(){
-  <input type="button" value="Valider" onclick="validation()"></input>
+ 
   
     var nom = document.getElementById("nom").value;
     var prénom = document.getElementById("prénom").value;
     var date = document.getElementById("date").value;
     var adresse= document.getElementById("adresse").value;
     var mail = document.getElementById("mail").value;
-  
-    let error = "";
-    for(let i of document.querySelectorAll('.inputAW')){
-        console.log( i.value.length, i.getAttribute('maxlength'))
-        
-        if{ i.value.length < 5 && i.value.length > i.getAttribute('maxlength')
 
-        document.getElementById("error").innerHTML="Veuillez renseigner tous les champs , ils doivent contenir au minimum 5 caractéres";}
-        else {document.getElementById("resultat").innerHTML="Bienvenue"+ document.querySelector("nom").value;
-      }
+    document.getElementById("error").innerHTML = "";
+    for(let item of document.querySelectorAll('.inputAW')){
+      if(item.value.length < 5){
+        var label =   document.querySelector("label[for="+item.id+"]").textContent;
+        document.getElementById("error").innerHTML += `Minimum 5 caractères pour : ${label} <br/>`;
+        document.getElementById("error").classList.add("display");
+        document.getElementById("resultat").classList.remove("display")
+  
+    }
+      
+  }
+    if(document.getElementById("error").innerHTML == ""){
+      var city = document.getElementById("nom").value
+      document.getElementById("resultat").innerHTML = `Bienvenue à ${nom}`;
+      document.getElementById("error").classList.remove("display")
+    document.getElementById("resultat").classList.add("display")
+    }
+     
+  
+    
+  }
