@@ -1,8 +1,8 @@
 function validation(){
   
-    var city = document.getElementById("city").value;
+    var nom = document.getElementById("nom").value;
     
-    if(city.length < 5){
+    if(nom.length < 5){
       // afficher une erreur
       
     }
