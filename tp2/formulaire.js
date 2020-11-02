@@ -11,8 +11,7 @@ function validation(){
     let error = "";
   for(let i of
      document.querySelectorAll('.inputAW')){
-      console.log( i.value.length, 
-        i.getAttribute('maxlength'))
+      console.log( i.value.length, i.getAttribute('maxlength'))
       // afficher une erreur 
       // si i.value.length < 5 && i.value.length > i.getAttribute('maxlength')
   }

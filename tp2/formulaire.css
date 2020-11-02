@@ -11,3 +11,16 @@ label{
 
     display: block ! important;
 }
+
+div id="error" {
+    background-color:pink;
+    padding: 5px;
+    border: 1px;
+
+}
+
+div id="resultat" {
+    background-color:green;
+    padding: 5px;
+    color: white;
+}
