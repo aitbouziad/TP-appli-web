@@ -1,4 +1,5 @@
 function validation(){
+  <input type="button" value="Valider" onclick="validation()"></input>
   
     var nom = document.getElementById("nom").value;
     var prénom = document.getElementById("prénom").value;
@@ -13,5 +14,5 @@ function validation(){
         if{ i.value.length < 5 && i.value.length > i.getAttribute('maxlength')
 
         document.getElementById("error").innerHTML="Veuillez renseigner tous les champs , ils doivent contenir au minimum 5 caractéres";}
-        else {document.getElementById("resultat").innerHTML="Bienvenue";
+        else {document.getElementById("resultat").innerHTML="Bienvenue"+ document.querySelector("nom").value;
       }
