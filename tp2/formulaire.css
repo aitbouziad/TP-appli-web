@@ -1,0 +1,13 @@
+label{
+    width: 100px;
+    display: inline-block;
+}
+#error, #resultat {
+
+    display: none;
+}
+
+.display{
+
+    display: block ! important;
+}
