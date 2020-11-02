@@ -17,14 +17,5 @@ function validation(){
   
     }
       
-  }
-    if(document.getElementById("error").innerHTML == ""){
-      var city = document.getElementById("nom").value
-      document.getElementById("resultat").innerHTML = `Bienvenue à ${nom}`;
-      document.getElementById("error").classList.remove("display")
-    document.getElementById("resultat").classList.add("display")
-    }
-     
-  
-    
+
   }
