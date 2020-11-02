@@ -17,25 +17,25 @@
        <body>
        <h1>Saisie d'une fiche "Personne"</h1>
 
-       <form id="formAW" onsubmit="validation()">
+       <form id="formAW" >
         <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom"  maxlength=30 class="inputAW"/>
+        <input type="text" id="nom" name="nom" maxlength="20"/>
         <br/>
         
         <label for="prénom">Prénom:</label>
-        <input type="text" id="prénom" name="prénom" class="inputAW" maxlength="20"/> <br/>
+        <input type="text" id="prénom" name="prénom" maxlength="20" > <br/>
 
         <label for="date">Date de naissance:</label>
-        <input type="text" id="date" name="date" placeholder="ex: JJ/MM/AAAA" class="inputAW" maxlength="50"/> <br/>
+        <input type="date" id="date" name="date" placeholder="ex: JJ/MM/AAAA" /> <br/>
 
         <label for="adresse">Adresse:</label>
-        <input type="text" id="adresse" name="adresse" class="inputAW" maxlength="20"/> <br/>
+        <input type="text" id="adresse" name="adresse" maxlength="50" /> <br/>
         
         <label for="mail">Mail:</label>
-        <input type="text" id="mail" name="mail" />
+        <input type="text" id="mail" name="mail" maxlength="30"/><br/>
           
           <p>
-          <input type="button" value="Valider" onclick="validation()"/>
+          <input type="button" value="Valider"/>
           </p>
           
           </form>
