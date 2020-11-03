@@ -5,7 +5,16 @@ function validation(){
    
   
 for(let item of document.querySelectorAll('.inputAW')){
-  if(item.value.length < 5){
+
+
+
+  if (item.value == "") {
+    var label =   document.querySelector("label[for="+item.id+"]").textContent;
+    document.getElementById("error").innerHTML += ` ce champ est obligatoire pour : ${label} <br/>`;
+    document.getElementById("error").classList.add("display");
+    document.getElementById("resultat").classList.remove("display")
+  
+  } else if(item.value.length < 5){
     // recuperation du label
     var label =   document.querySelector("label[for="+item.id+"]").textContent;
     // ajout du message d'erreur
@@ -15,11 +24,6 @@ for(let item of document.querySelectorAll('.inputAW')){
     document.getElementById("error").classList.add("display");
       document.getElementById("resultat").classList.remove("display")
 
-  } else if (item.value == "") {
-  var label =   document.querySelector("label[for="+item.id+"]").textContent;
-  document.getElementById("error").innerHTML += ` ce champ est obligatoire pour : ${label} <br/>`;
-  document.getElementById("error").classList.add("display");
-  document.getElementById("resultat").classList.remove("display")
 }
 }
 
