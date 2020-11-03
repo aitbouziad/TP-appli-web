@@ -1,6 +1,7 @@
 function validation(){
 
- 
+  document.getElementById("error").innerHTML = "";
+
    
   
 for(let item of document.querySelectorAll('.inputAW')){
