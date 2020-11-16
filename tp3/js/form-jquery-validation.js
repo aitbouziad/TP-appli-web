@@ -31,12 +31,20 @@ $( document ).ready(function() {
             $('#Modal').modal("show");
         }else{
             $(".modal-title").text("Bienvenue " + document.querySelector("#prenom").value);
-            $(".modal-body").html( "Vous etes nés le "+ document.querySelector("#date").value+" </br>et vous habitez à:"+'</br><a href ="http://maps.google.com/maps?q='+document.querySelector("#adresse").value+'"><img src="https://maps.googleapis.com/maps/api/staticmap?markers='+document.querySelector("#adresse").value+'&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/></a>');
+            $(".modal-body").html( "Vous êtes né le "+ document.querySelector("#date").value+" </br>et vous habitez à:"+'</br><a href ="http://maps.google.com/maps?q='+document.querySelector("#adresse").value+'"><img src="https://maps.googleapis.com/maps/api/staticmap?markers='+document.querySelector("#adresse").value+'&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/></a>');
             $('#myModal').modal("show");
         }
-        $("#date").datepicker({ dateFormat: 'dd/mm/yy', 
-        maxDate :'16/11/2020'
-      });   
+
+        
+        
+            $("#date").datepicker({ dateFormat: 'dd/mm/yy', 
+            maxDate :'16/11/2020'
+          });   
+           
+
+     
+       
+
     });
 
      
