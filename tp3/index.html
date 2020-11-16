@@ -1,33 +1,129 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3:Boostrap & jQuery</title>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+
+<!-- jquery pour pouvoir utiliser les composants JS de boostap -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+
+<!-- CSS boostrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="js/popper.min.js"></script>
+
+<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , ..) -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--valider le jquery-->
+<script src="js/form-jquery-validation.js"></script>
+
+<!--pour l'ajout d'un calendrier jQuery-->
+<link rel="stylesheet" href="jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.css"  />  
+<script  src="jquery-ui/js/jquery-1.9.1.js"></script>  
+<script  src="jquery-ui/js/jquery-ui-1.10.3.custom.js"></script> 
+<script  src="jquery-ui/js/jquery.ui.datepicker-fr.js"></script>
+
+</head>
+
+<body>
+    <div class="container"  style="margin: 2 auto;
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+    width: 700px;
+    height: 40%;
+  
+    padding: 1em;
+    border: 1px dotted #33302c ;
+    
+    background-color:rgb(243, 228, 189);" >
+
+<h1>TP AW-FORMULAIRE v2</h1>
+<p>Avec Bootstrap et jQuery</p>
+<form>
+<div class="form-group ">  <!--  on mets le label et le input dans un meme groupe  -->
+    <label for="nom" class="col-sm-2 col-form-label">Nom</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control champs" id="nom" placeholder="entrez votre nom">
+    </div>
+</div>
+
+<div class="form-group ">
+    <label for="prenom"class="col-sm-2 col-form-label">Prenom</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control champs" id="prenom" placeholder="entrez votre prenom">
+    </div>
+</div>
+<div class="form-group ">
+    <label for="date"class="col-sm-2 col-form-label">Date de naissance</label>
+    <div class="col-sm-10">
+    <input type="date" class="form-control champs" id="date" placeholder="entrez votre date de naissance">
+    </div>
+</div>
+<div class="form-group ">
+    <label for="adresse"class="col-sm-2 col-form-label">Adresse</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control champs" id="adresse" placeholder="entrez votre adresse">
+    </div>
+</div>
+<div class="form-group ">
+    <label for="mail"class="col-sm-2 col-form-label">Mail</label>
+    <div class="col-sm-10">
+    <input type="email" class="form-control champs" id="mail" placeholder="email@">
+    </div>
+</div>
+<div id="envoyer" style="margin-inline-start:115px"> 
+  
+  <button class="btn btn-primary active" type="submit ">Valider</button>
+ 
+</div>
+
+</form>
+ <!-- </fieldset> -->
+</form>
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" > Modal title  </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+     </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">Save changes</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="Modal">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title2">erreur </h2>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body2">
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">Save changes</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>  
+
+    
+</body>
 </html>
