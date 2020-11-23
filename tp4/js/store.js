@@ -48,7 +48,7 @@ $("#valide").on("click",function store(event) {
       localStorage.setItem("adresse", inputAdresse.value);
       localStorage.setItem("mail", inputEmail.value);
 
-     $('#success').addClass("alert alert-success").text(" Le formulaire est sauvegardé!");
+     $('#success').addClass("alert alert-success").text(" Le formulaire a été sauvegardé!");
 
     $("#table").show();
     $("#liste_des_contacts").show()
