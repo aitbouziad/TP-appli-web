@@ -64,8 +64,6 @@ $("#valide").on("click",function store(event) {
      localStorage.getItem("adresse")+'">'+localStorage.getItem("adresse") +'</a></td><td><a href=mailto:>'+localStorage.getItem("mail")+'</a></td>';
      
    
-     
-    
 });
 
 
